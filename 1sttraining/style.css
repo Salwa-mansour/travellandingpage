@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* background-color: tan; */
+}
+
+header{
+    height: 40vh;
+    width: 100vw;
+     background-image: linear-gradient(rgba(255, 255, 255, 0.233),rgba(255, 255, 255, 0.233)),url(../imgs/background1.jpg);
+     background-size: cover;
+     background-position: bottom left;
+     background-attachment: fixed;
+}
+.header .logo{
+    color:#fff;
+    text-shadow: 0.5px 0.5px 20px black;
+    padding: 1rem;
+}
+.login-btn{
+    width:calc(5rem + .25vw) ;/*100px desktopview */
+   padding: calc(.2rem + .25vw)  ; /* 8px */
+   /* width: 100px; */
+    
+    outline: none;
+    border: 2px solid rgb(27, 27, 112);
+    border-radius: 50px;
+   background: transparent;
+}
+.container{
+    display: flex;
+    padding: .5rem 1rem;
+    align-items: flex-start;
+    align-content: space-around;
+}
+.logo{
+    flex: 2;
+    
+}
+
+
