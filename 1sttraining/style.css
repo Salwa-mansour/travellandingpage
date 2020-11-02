@@ -9,7 +9,7 @@
     height: 50vh;
    min-height: 360px;
     width: 100vw;
-     background-image: linear-gradient(rgba(255, 255, 255, 0.233),rgba(255, 255, 255, 0.233)),url(../imgs/background1.jpg);
+     background-image: linear-gradient(rgba(255, 255, 255, 0.233),rgba(255, 255, 255, 0.233)),url(../imgs/background1.1.jpg);
      background-size: cover;
      background-position: bottom left;
      background-attachment: fixed;
@@ -31,7 +31,7 @@
    background: transparent;
 }
 
-/* //////////// */
+/* //////////// --------------- Featur boxes styleings--------------------*/
 .container0{
     display: flex;
     padding: .5rem 1.2rem;
@@ -94,7 +94,25 @@
 /* .fearure-img img{
     max-width: 100%;
 } */
+.main-f-box{
+    margin-bottom: 4rem;
+    box-shadow: 0 0 10px rgba(37, 72, 214, 0.37);
+}
+.featur-box{
+    position: relative;
+   
+    /* margin-bottom: 4rem; */
+}
+.featur-img{
+    position: relative;
+}
+/* .p-r-container{
+    position: relative;
+    background-color: red;
+    height: 200px;
+} */
 .price{
+    display: inline-block;
     width: 3.125rem;
     height: 3.125rem;
     background-color: #ff5722;
@@ -104,4 +122,42 @@
     border-radius: 50%;
     line-height: 3;
     box-shadow: 0 0 10px 1px rgba(37, 73,214, .18);
+    position: absolute;
+   bottom: 0;
+    /* transform: translateY(50%); */
+    transform: translate3d(50%,45%,0);
 }
+
+.rating{
+    padding: 3px;
+   right: 0;
+    background: rgb(255, 255, 255);
+  display: inline-block;
+    position: absolute;
+    bottom: 0;
+}
+.rating .fa {
+    font-size: 1rem;
+    color: #ff5722;
+}
+.feature-details{
+    font-size: calc(.95rem + .3vw);
+    margin-top: 2rem;
+    text-align: justify;
+    padding: .8rem;
+}
+.feature-details h4{
+    font-weight: 600;
+}
+
+.f-icons{
+    margin-top: 1rem;
+    color: rgb(59, 59, 59);
+}
+.feature-details .fa{
+   
+    margin-right: .3125rem;
+    color: #ff5722;
+}
+
+
