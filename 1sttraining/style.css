@@ -85,7 +85,8 @@
 }
 /* The featurs section */
 .features{
-    padding: calc(2rem + 1.5vw)  1.2rem;
+    padding: calc(2rem + 1.5vw)  1.2rem 0;
+   
 }
 .features h1{
     text-align: center;
@@ -98,10 +99,9 @@
     margin-bottom: 4rem;
     box-shadow: 0 0 10px rgba(37, 72, 214, 0.37);
 }
+
 .featur-box{
     position: relative;
-   
-    /* margin-bottom: 4rem; */
 }
 .featur-img{
     position: relative;
@@ -159,5 +159,41 @@
     margin-right: .3125rem;
     color: #ff5722;
 }
+/* ////////////////Galury */
+.gallery {
+    position: relative;
+    width: 100vw;
+    padding: 2.25rem 0;
+    background-color:rgb(185, 184, 184) ;
+   text-align: center;
+   
+}
+.gallery-item{
+    position: relative;
+ 
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem 0;
+}
+.gallery-item img{
+    border-radius: 15px;
+}
+
+.gallery-item p{
+    position: absolute;
+   top: 45%;
+   left: 35%;
+   color: whitesmoke;
+   text-shadow: 0 0 10px black;
+   font-size: calc(1.5rem + .5vw);
+}
+/* //////////////////////////////////////////// */
+.banner{
+    z-index: 40;
+    /* position: absolute; */
+    height: 70vw;
+    background-image: url(../imgs/background2.jpg);
+}
+
 
 
