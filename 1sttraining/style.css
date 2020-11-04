@@ -96,6 +96,7 @@
     max-width: 100%;
 } */
 .main-f-box{
+    position: relative;
     margin-bottom: 4rem;
     box-shadow: 0 0 10px rgba(37, 72, 214, 0.37);
 }
@@ -104,7 +105,7 @@
     position: relative;
 }
 .featur-img{
-    position: relative;
+    /* position: relative; */
 }
 /* .p-r-container{
     position: relative;
@@ -160,17 +161,25 @@
     color: #ff5722;
 }
 /* ////////////////Galury */
+.gallery-background{
+      position: relative;
+      background-color:rgb(243, 243, 243) ;
+      padding-top: 2.25rem;
+}
 .gallery {
-    position: relative;
-    width: 100vw;
+    position: relative ;
+   
+    height: 1000px;
+    width: 100%;
     padding: 2.25rem 0;
-    background-color:rgb(185, 184, 184) ;
+  
+    background-color: transparent;
    text-align: center;
    
 }
 .gallery-item{
     position: relative;
- 
+    background-color: transparent;
     width: 80%;
     margin: auto;
     padding: 1.5rem 0;
@@ -189,11 +198,38 @@
 }
 /* //////////////////////////////////////////// */
 .banner{
+   padding: 15% 0;
+    width: 100%;
     z-index: 40;
-    /* position: absolute; */
-    height: 70vw;
+  position: relative;
+    height: 30vw;
     background-image: url(../imgs/background2.jpg);
+    background-size:contain;
+    background-position: center top;
+    background-attachment: fixed;
 }
+.banner-highlights{
+    /* position: absolute; */
+    height: 30vw;
+        padding: calc(.8rem + .5vw) 0;
+        background-color: rgba(0, 0, 0, 0.705);
+        text-align: center;
+        color: #fff;
+}
+.booking-btn{
+    width:calc(5rem + .25vw) ;/*100px desktopview */
+    padding: calc(.2rem + .25vw)  ; /* 8px */
+    /* width: 100px; */
+   transform: TranslateY(1.6rem)  ;
+     outline: none;
+     border: 2px solid rgb(255, 255, 255);
+     color: white;
+     border-radius: 50px;
+    background: transparent;
+}
+/* //////////////////////////////////// */
 
-
+.users-feedback{
+    padding: ;
+}
 
