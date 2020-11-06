@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*-------------header styelings---------------*/
+.header{
+    height: 50vh;
+    min-height: 30px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255,255,255,0.233),rgba(255,255,255,0.233)),url(../imgs/background1.1.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    /* text-align: center; */
+    /* background-attachment: fixed; */
+}
+.header .logo {
+    color: #fff;
+    text-shadow: .5px .5px 20px black;
+    padding: 1rem;
+}
+
+.login-btn{
+    width:calc(5rem + .25vw) ;/*100px desktopview */
+   padding: calc(.2rem + .25vw)  ; /* 8px */
+   /* width: 100px; */
+  transform: TranslateY(1.6rem)  ;
+    outline: none;
+    border: 2px solid rgb(27, 27, 112);
+    border-radius: 50px;
+   background: transparent;
+}
+.container0{
+    display: flex;
+    padding: .5rem 1.2rem;
+    align-items: flex-start;
+    /* align-content: space-around; */
+    justify-content: center;
+}
+.logo{
+    flex: 1;
+}
+.hd-overlay{
+    text-align: center;
+    padding: 0 1.2rem;
+}
+.hd-overlay h1{
+    padding-top: 8%;
+    padding-bottom: 1rem;
+    font-size: calc(1.5rem + .5rem);
+}
+.input-group{
+   
+    position: relative;
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    margin-top: 2rem;
+ /* background-color: chartreuse; */
+ text-align: center;
+}
+.form-control , .search-btn {
+    outline: none;
+    border: 0;
+    border-radius: 30px;
+    
+}
+.form-control{
+    width: 100%;
+     line-height: 3;
+}
+
+.search-btn{
+    cursor: pointer;
+    line-height:2.75;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    color: white;
+    border: 2px solid whitesmoke;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(175, 174, 236),blue);
+}
+/* ----------------Fearuers section ------------- */
+/* ////////////////////////////////// */
+.container{
+    display: flex;
+  width: 100%;
+    flex-wrap: wrap;
+    background-color: teal;
+    justify-content: space-around;
+}
+}
+.features{
+    /* padding: 1.2rem; */
+}
+.features h1{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.main-f-box{
+    /* min-width: 200px;
+    max-width: 360px; */
+    width: 250px;
+    padding: 1.25rem;
+}
+@media screen and (min-width:477px){
+    .container{
+        /* justify-content: space-around; */
+    }
+}
+@media screen and (min-width:1240px){
+    .container{
+        justify-content: space-evenly;
+    }
+}
