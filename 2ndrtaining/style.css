@@ -5,13 +5,13 @@
 /*-------------header styelings---------------*/
 .header{
     height: 50vh;
-    min-height: 30px;
+    /* max-height: 360px; */
     width: 100%;
     background-image: linear-gradient(rgba(255,255,255,0.233),rgba(255,255,255,0.233)),url(../imgs/background1.1.jpg);
     background-size: cover;
     background-position: bottom right;
     /* text-align: center; */
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
 }
 .header .logo {
     color: #fff;
@@ -82,35 +82,79 @@
     background-image: linear-gradient(rgb(175, 174, 236),blue);
 }
 /* ----------------Fearuers section ------------- */
-/* ////////////////////////////////// */
+/* /////////////////flex box styleings///////////////// */
 .container{
     display: flex;
   width: 100%;
     flex-wrap: wrap;
-    background-color: teal;
+  
     justify-content: space-around;
 }
+
+@media screen and (min-width:1240px){
+    .container{
+        justify-content: space-evenly;
+    }
 }
-.features{
-    /* padding: 1.2rem; */
+.main-f-box{
+    /* min-width: 200px;
+    max-width: 360px; */
+    max-width: 350px;
+    padding: 1.25rem;
 }
 .features h1{
     text-align: center;
     padding-bottom: 2rem;
 }
-.main-f-box{
-    /* min-width: 200px;
-    max-width: 360px; */
-    width: 250px;
-    padding: 1.25rem;
+
+/* /////////////////------///////////////////////////// */
+/* here complete the feature section tylings ans positniong */
+.features{
+      background-color: teal;
 }
-@media screen and (min-width:477px){
-    .container{
-        /* justify-content: space-around; */
-    }
+/* ---------------------------------------------------- */
+.gallery{
+    position: relative;
+    /* height: 1000px; */
+    /* width: 100%; */
+      background-color: rgb(0, 81, 128);
+    /* text-align: center; */
 }
-@media screen and (min-width:1240px){
-    .container{
-        justify-content: space-evenly;
-    }
+.gallery-item{
+  
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    margin: 1rem;
+}
+.gallery-item img{
+    border-radius: 15px;
+}
+.gallery-item p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-size: calc(1.5rem + .3vw);
+    
+    white-space: nowrap;
+}
+/* ------------------banner------------------------- */
+.banner{
+    padding: 15% 0;
+    position: relative;
+    height: 30vw;
+    background-image: url(../imgs/background2.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+}
+.banner-highlights{
+    background-color: rgba(0, 0, 0, 0.699);
+    color: #fff;
+    padding: calc(.8rem + .5rem);
+    text-align: center;
+    height: 20vw;
+    display: flex;
 }
