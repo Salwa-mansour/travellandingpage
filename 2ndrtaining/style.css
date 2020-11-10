@@ -166,4 +166,61 @@
   
     display: flex;
 }
-
+.users-feedback{
+    padding: 3.25;
+    text-align: center;
+}
+.user-review-item{
+    position: relative;
+    max-width: 250px;
+    margin: 2rem;
+    text-align: justify;
+}
+.users-feedback h1{
+    padding-top:1.5rem ;
+}
+.user-review{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 100, 0.2);
+    padding: 2rem;
+}
+.user-review-item img{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate3d(-50%,50%,0);
+    border-radius: 50%;
+}
+.user-review p{
+    padding-top:1rem ;
+}
+.user-review p::before{
+    content: '\201d';
+    display: block;
+    position: absolute;
+    font-size: 6rem;
+    color: rgb(94, 94, 253);
+    left: 44%;
+    top: -.5rem;
+    font-family: sans-serif;
+}
+/* -------------------footer--------------- */
+.footer{
+    padding: 3rem 1.2rem;
+    background-image:linear-gradient(#2d557d,#9610fd) ;
+    text-align: center;
+    line-height: 1.5;
+}
+.ft-item{
+    position: relative;
+    margin: 1.5rem;
+    padding: .5rem;
+    background-color: orange;
+}
+.ft-item h4{
+   position: absolute;
+ }
+ /* this is not working */
+ .ft-item p:first-child{
+     margin-top: 5rem;
+     /* font-size: calc(.7rem + .5vw); */
+ } 
