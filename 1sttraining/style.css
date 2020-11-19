@@ -128,7 +128,7 @@
     position: absolute;
    bottom: 0;
     /* transform: translateY(50%); */
-    transform: translate3d(50%,45%,0);
+    
 }
 
 .rating{

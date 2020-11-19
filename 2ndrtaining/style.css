@@ -148,8 +148,8 @@
     padding: 15% 0;
     position: relative;
     height: 30vw;
-    background-image: url(../imgs/background2.jpg);
-    background-size: contain;
+    background-image: url(../imgs/background3.jpg);
+    background-size: cover;
     background-attachment: fixed;
 }
 .banner-highlights{
@@ -166,6 +166,7 @@
   
     display: flex;
 }
+/* -----------------users feedback------------------ */
 .users-feedback{
     padding: 3.25;
     text-align: center;
@@ -190,6 +191,7 @@
     transform: translate3d(-50%,50%,0);
     border-radius: 50%;
 }
+
 .user-review p{
     padding-top:1rem ;
 }
