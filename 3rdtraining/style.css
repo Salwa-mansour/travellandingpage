@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* ------------header stylings------------- */
+.header{
+    height: 50vh;
+    min-height: 360px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255,255,255,.233),rgba(255,255,255,.233)),url(../imgs/background3.jpg);
+    background-size: cover;
+    background-position: bottom ;
+    /* background-attachment: fixed; */
+}
+.header .logo {
+    color: #fff;
+    text-shadow: .5px .5px 20px black;
+    padding: 1rem;
+
+}
+.login-btn{
+    width: calc(5rem + .25vw);
+    padding: calc(.2rem + .25vw);
+    transform: translateY(1.6rem);
+    outline: none;
+    border-radius: 50px;
+    border: 2px solid rgb(27,27,112);
+    background-color: transparent;
+}
+.container0{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: .5rem 1.2rem;
+}
+.logo{
+    flex: 1;
+}
+.hd-overlay{
+    text-align: center;
+    padding: 0 1.2rem;
+     max-width: 500px;
+     margin: auto;
+}
+.hd-overlay h1{
+    padding-top: 8%;
+    padding-bottom: 1rem;
+    font-size: calc(1.5rem + .5rem);
+}
+
+
+.input-group{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    max-width: 500px;
+    margin-top: 2rem;
+    text-align: center;
+}
+.form-control , .search-btn{
+    outline: none;
+    border: 0;
+    border-radius: 30px;
+}
+.form-control{
+    width: 100%;
+    line-height: 3;
+}
+.search-btn{
+    cursor: pointer;
+    line-height: 2.75;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    color: #fff;
+    border: 2px solid white;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(175,174,236),blue);
+}
+/* ----------- Featurers section ----------- */
+/* /////////////flex box styings/////////////// */
+.container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+@media screen and (min-width:1240px){
+    .container{
+        justify-content: space-evenly;
+    }
+}
+
+/* ///////////////// */
+.main-f-box{
+    max-width: 350px;
+    padding: 1.25rem;
+}
+.features h1{
+    text-align: center;
+    padding: 2rem;
+}
+.features{
+    background-color: teal;
+}
+/* --------------------------gallery------------ */
+.gallery{
+    position: relative;
+    background-color: rgb(0,81,128);
+}
+.gallery-item{
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+    margin: 1rem;
+}
+.gallery-item img{
+    border-radius: 15px;
+}
+.gallery-item p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    color: white;
+    text-shadow: 0 0 10 black;
+    font-size: calc(1.5rem + .3vw);
+    white-space: nowrap;
+}
+/* ---------------------------banner--------- */
+.banner{
+    position: relative;
+    padding: 15% 0;
+    height: 30vw;
+    background-image: url(../imgs/background1.1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+.banner-highlights{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+    padding: calc(.8rem + .5rem);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 20vw;
+    display: flex;
+}
+/* -------------------------users feed back------ */
+.usersfeedback{
+    padding: 3.25rem;
+    text-align: center;
+}
+.user-review-item{
+    position: relative;
+    max-width: 250px;
+    margin: 2rem;
+    text-align: justify;
+}
+.usersfeedback h1{
+    padding-top: 1.5rem;
+}
+.user-review-item {
+    box-shadow: 0 0 10px 0 rgba(0,0,100,.2);
+    padding: 2rem;
+}
+.user-review-item img{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate3d(-50%,50%,0);
+    border-radius: 50%;
+}
+.user-review p{
+    padding-top: 1rem;
+}
+.user-review p::before{
+    content: '\201d';
+    display: block;
+    position: absolute;
+    font-size: 6rem;
+    color: rgb(94,94,253);
+    left: 44%;
+    top: -.5rem;
+    font-family: sans-serif;
+}
+/* -------footer------------ */
+.footer{
+    padding: 3rem 1.2rem;
+    background-image: linear-gradient(#2d557d,#9610fd);
+    text-align: center;
+    line-height: 1.5;
+}
+.ft-item{
+    position: relative;
+    margin: 1.5rem;
+    padding: .5rem;
+    background-color: rgba(255,255,255,.2);
+
+}
